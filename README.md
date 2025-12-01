@@ -1,20 +1,67 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Buyer Finder
 
-# Run and deploy your AI Studio app
+AI-powered tool that identifies private equity buyers for small and medium-sized businesses.
 
-This contains everything you need to run your app locally.
+## Overview
 
-View your app in AI Studio: https://ai.studio/apps/drive/14Y-64f3SdPQN19epIWYy3coyavZKQL1t
+This app analyzes a company's website to generate an investment profile and match it with relevant private equity funds. The app uses Google's Gemini 3 Pro AI API.
 
-## Run Locally
+## Project Structure
 
-**Prerequisites:**  Node.js
+```
+/buyer-finder/
+├── App.tsx                    # Root component with state management
+├── services/geminiService.ts  # AI API integration & prompt engineering
+├── components/
+│   ├── AnalysisView.tsx       # Results display with buyer cards
+│   ├── LoadingIndicator.tsx   # Multi-step progress UI
+│   └── MarkdownRenderer.tsx   # Content formatting utilities
+└── types.ts                   # TypeScript type definitions
+```
 
+
+## How It Works
+
+Three-phase analysis:
+
+1. **Company Research** - Extracts industry, location, size, and offerings from the given website url
+2. **Investment Suitability**  - Evaluates market stability, scalability potential, and investment risks
+3. **Buyer Identification** - Identifies 5 strategic PE funds with portfolio evidence and fit rationale
+
+## Features
+
+- **Automated company profiling** from website URL input
+- **Investment suitability assessment** with market analysis and risk identification
+- **PE fund matching** with strategic fit reasoning and portfolio evidence
+- **Source attribution** with inline web citations
+
+## Tech Stack
+
+- **Frontend**: React 19 + TypeScript 5.8 + Vite 6.2
+- **AI Engine**: Google Gemini 3 Pro with integrated web search
+- **Architecture**: Client-side web application only. No backend for this prototype.
+
+## Getting Started
+
+**Prerequisites**: Node.js and a Google Gemini API key
 
 1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+   ```
+   npm install
+   ```
+
+2. Create `.env.local` and add your API key:
+   ```
+   GEMINI_API_KEY=your_api_key_here
+   ```
+
+3. Run the development server:
+   ```
+   npm run dev
+   ```
+
+4. Open http://localhost:3000 in your browser
+
+## Deployment
+
+This project is designed for both local development and deployment on Google AI Studio.
