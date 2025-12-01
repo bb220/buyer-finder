@@ -2,6 +2,11 @@
 
 AI-powered tool that identifies private equity buyers for small and medium-sized businesses.
 
+Live demo: [https://smb-buyer-tool-226810707172.us-west1.run.app/](https://smb-buyer-tool-226810707172.us-west1.run.app/)
+
+<img width="909" height="489" alt="image" src="https://github.com/user-attachments/assets/d2b4a388-f7f8-4a5b-9b22-e62667f929dd" />
+
+
 ## Overview
 
 This app analyzes a company's website to generate an investment profile and match it with relevant private equity funds. The app uses Google's Gemini 3 Pro AI API.
