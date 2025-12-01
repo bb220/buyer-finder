@@ -28,13 +28,6 @@ Three-phase analysis:
 2. **Investment Suitability**  - Evaluates market stability, scalability potential, and investment risks
 3. **Buyer Identification** - Identifies 5 strategic PE funds with portfolio evidence and fit rationale
 
-## Features
-
-- **Automated company profiling** from website URL input
-- **Investment suitability assessment** with market analysis and risk identification
-- **PE fund matching** with strategic fit reasoning and portfolio evidence
-- **Source attribution** with inline web citations
-
 ## Tech Stack
 
 - **Frontend**: React 19 + TypeScript 5.8 + Vite 6.2
