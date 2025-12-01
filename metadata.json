@@ -1,0 +1,5 @@
+{
+  "name": "SMB Buyer Tool",
+  "description": "An AI-powered tool that analyzes SMB websites to generate company profiles and shortlist potential Private Equity buyers using Gemini 3 Pro and Google Search.",
+  "requestFramePermissions": []
+}
